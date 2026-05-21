@@ -4,16 +4,17 @@
 
 #include <iostream>
 #include <typeinfo>
-
+// creating a variable with the type that suits the value you want to assign to it 
+// auto type must be initilized the variables  at declaration   
 int main(){
-    auto score;
-    auto points;
-    auto height;
-    auto duration;
-    auto is_active;
-    auto initial;
-    auto title;
-
+    auto score = 8; // Type Inference with auto
+    auto points = 12345678901 ; // 11 digit exceeds 32-bits 
+    auto height = 6.2f ; //float  
+    auto duration =  90.0 ; // floating points constants are double by default 
+    auto is_active = true ;
+    auto initial = 'p'; // characters are enclosed by single quotes
+    auto title = "soccer champions"; //PKc:pointer to cost char 
+// suppose: use type inference to automatically determine the variable types  
     std::cout << "The type of score is " << typeid(score).name() << std::endl;
     std::cout << "The type of points is " << typeid(points).name() << std::endl;
     std::cout << "The type of height is " << typeid(height).name() << std::endl;
