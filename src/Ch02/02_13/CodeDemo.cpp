@@ -1,7 +1,7 @@
 // Complete Guide to C++ Programming Foundations
 // Challenge 02_13
 // Data Types, by Eduardo Corpeño 
-
+  
 #include <iostream>
 #include <cstdint>
 
