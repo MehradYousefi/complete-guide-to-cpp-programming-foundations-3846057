@@ -5,10 +5,18 @@
 #include <iostream>
 #include <cstdint>
 
+/*everytime preprocessor finds the symbol MAX_AMO
+it will replace it with 500 */
+#define MAX_AMMO 500
+#define DEBUG
+ 
 int main(){
-    int32_t ammo = 100;
+    int32_t ammo = MAX_AMMO / 5;
     uint8_t health_items = 5;
-
+//make code conditionally
+#ifdef DEBUG
+    std::cout << "[DEBUG] starting game simulation... " << std::endl;
+#endif
     ammo += 200; // Player finds extra ammo
     health_items -= 2; // Player uses some health items
 
